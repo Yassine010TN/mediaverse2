@@ -102,23 +102,16 @@ WSGI_APPLICATION = 'app_mediaverse.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mediaverse_db',
         'USER': 'postgres',
         'PASSWORD': '#IRP#mediaverse',
-        'HOST': 'localhost'
-    }
-}
+        'HOST': 'db',
+        'PORT': '5432',
 
-"""
-#sqlite settings.
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

@@ -12,12 +12,12 @@ from resource import views
 
 
 router1 = DefaultRouter()
-router1.register('resources', views.ResourceViewSet)
-router1.register('categories', views.CategoryViewSet)
-router1.register('types', views.TypeViewSet)
-router1.register('all-resources', views.AllResourcesViewSet)
-router1.register('all-categories', views.AllCategoriesViewSet)
-router1.register('all-types', views.AllTypesViewSet)
+router1.register('resources', views.ResourceViewSet, basename='resources')
+router1.register('categories', views.CategoryViewSet, basename='categories')
+router1.register('types', views.TypeViewSet, basename='types')
+router1.register('all-resources', views.AllResourcesViewSet, basename='all-resources')
+router1.register('all-categories', views.AllCategoriesViewSet, basename='all-categories')
+router1.register('all-types', views.AllTypesViewSet, basename='all-types')
 
 app_name = 'resource'
 
